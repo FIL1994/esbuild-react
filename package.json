@@ -1,0 +1,28 @@
+{
+  "name": "esbuild-react",
+  "version": "1.0.0",
+  "description": "esbuild and react",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp",
+    "watch": "gulp",
+    "build": "esbuild src/index.tsx '--define:process.env.NODE_ENV=\"production\"' --bundle --minify --loader:.jpg=file --loader:.svg=file --outdir=build"
+  },
+  "keywords": [],
+  "author": "Philip Van Raalte",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/browser-sync": "^2.26.1",
+    "@types/node": "^14.0.27",
+    "@types/react": "^16.9.46",
+    "@types/react-dom": "^16.9.8",
+    "browser-sync": "^2.26.12",
+    "esbuild": "^0.6.19",
+    "gulp": "^4.0.2",
+    "typescript": "^3.9.7"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
