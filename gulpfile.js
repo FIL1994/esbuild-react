@@ -38,7 +38,7 @@ function serve() {
     ui: false,
   });
   gulp.watch("build/*").on("change", browserSync.reload);
-  gulp.watch("src/*").on("change", build);
+  gulp.watch("src/**").on("change", build);
 }
 
 exports.default = serve;
